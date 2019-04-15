@@ -1,14 +1,216 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Piment</title>
-  <base href="/">
+    <head>
+        <meta charset="utf-8">
+        <title>Yogue</title>
+        <base href="/">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+            crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link
+            href="https://fonts.googleapis.com/css?family=Shadows+Into+Light|Source+Sans+Pro"
+            rel="stylesheet">
+
+        <link type="text/css" rel="stylesheet" href=""/>
+
+        <style>
+            * {
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+            @font-face {
+                font-family: 'icomoon';
+            }
+            body {
+                margin: 0;
+                font-family: sans-serif;
+
+            }
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            .main-header {
+                margin: auto;
+                width: 100%;
+                height: 200px;
+                min-height: 100px;
+                padding: 1em 2em;
+                border: 2px solid #15a913;
+                border-top: none;
+                border-radius: 0 0 5px 5px;
+                background: #0ab917;
+            }
+            .main-header:after {
+                content: " ";
+                display: table;
+                clear: both;
+            }
+            img {
+                display: block;
+                text-decoration: none;
+                float: left;
+                margin-top: 5px;
+            }
+            .logo::before {
+                color: #fff;
+                content: "\e001";
+                font-weight: normal;
+                font-style: normal;
+                font-size: 2.5em;
+                font-family: "icomoon";
+                -webkit-font-smoothing: antialiased;
+            }
+
+            /* Nav Demo Styles -------------------- */
+
+            .drop-nav,
+            .main-nav {
+                }
+            .main-nav {
+                float: right;
+                border-radius: 1px;
+                margin-top: 10px;
+
+            }
+            @media screen and (min-width: 600px) {
+                .main-nav > li {
+                float: left;
+            
+            }
+               }
+
+           
+            .main-nav li:first-child {
+                border-left: none;
+            }
+            .main-nav a {
+                font-size: 15px;
+                color: #000;
+                font-family: 'Open Sans', 'Helvetica Neue', 'Arial', sans-serif;
+                font-weight: 740;
+                display: block;
+                padding: 10px 5px;
+                text-decoration: none;
+            }
+            .dropdown,
+            .flyout {
+                position: relative;
+               
+            }
+            .dropdown:after {
+                content: "\25BC";
+                font-size: 0.5em;
+                display: block;
+                position: absolute;
+                color: #eae2ee;
+                top: 38%;
+                right: 0;
+
+            }
+            .drop-nav,
+            .flyout-nav {
+                position: absolute;
+                display: none;
+                background: #2c3e50;
+                border-right: none;
+            }
+
+            .drop-nav li {
+                border-bottom: 1px solid rgba(255,255,255,.2);
+            }
+            .dropdown:hover > .drop-nav,
+            .flyout:hover > .flyout-nav {
+                display: block;
+            }
+            .flyout-nav {
+                left: 100%;
+                top: 0;
+            }
+            .flyout-nav,
+            .flyout:hover a {
+                background: #eae2ee;
+            }
+
+           
+            
+  @keyframes ticker {
+    0% { transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(-100%, 0, 0); }
+  }
+  .tcontainer{
+    width: 100%;
+    overflow: hidden;
+
+  }
+  .ticker-wrap {
+    width: 50%;
+   
+    font-weight: 700;
+    padding-bottom: 90px;
+    font-size: 20px;
+    
+  }
+  .ticker-move {
+    display: inline-block;
+    white-space: nowrap;
+ 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: ticker;
+    animation-duration: 10s;
+  }
+  
+  .ticker-item{
+    display: inline-block;
+    
+  }
+    /*link*/
+ 
+        </style>
+
+    </head>
+    <body>
+<header>
+        <div class="logo_div">
+            <img src="assets/logo.png" alt="" class="logo"/>
+        </div>
+            <ul class="nav">
+                <li><a href="wall/accueil">Accueil</a></li>
+                <li><a href="#">Catalogue</a></li>
+                <li><a href="#">Galérie</a></li>
+                <li><a href="#">Points de vente</a>
+                <ul>
+                    <li><a href="#">Europe</a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>    
+    </header>
+        <div class="tcontainer">
+                        <div class="ticker-wrap">
+                          <div class="ticker-move">
+                            <div class="ticker-item">L’attachement à notre culture </div>
+                            <div class="ticker-item">nous a permis de bâtir un empire.</div>
+                             </div>
+                        </div>
+                      </div>
+           
+        
+        <app-root></app-root>
+    </body>
 </html>

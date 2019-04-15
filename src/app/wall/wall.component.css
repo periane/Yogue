@@ -1,0 +1,335 @@
+.img-fluid{
+    padding-block-end: 10px;
+    margin-block-end: 15px;
+    height: 150px;
+}
+
+/*product*/
+.products h2 {
+    padding: 30px;
+}
+.load h2 {
+    padding: 20px;
+}
+
+#container {
+    width: 1280px;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+#container .box {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background: #f0f8ff;
+    margin: 20px;
+    box-sizing: border-box;
+}
+#container .box .imgBox {
+    position: relative;
+    overflow: hidden;
+}
+
+#container .box .imgBox img {
+    max-width: 100%;
+    width: 100%;
+    transition: transform 2s;
+}
+#container .box:hover .imgBox img {
+    transform: scale(1.2);
+}
+#container .box .details {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: rgba(0, 0, 0, .8);
+    transform: scaleY(0);
+    transition: transform 0.5s;
+}
+
+#container .box:hover .details {
+    transform: scaleY(1);
+}
+
+#container .box .details .content {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+}
+#container .box .details .content {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+}
+#container .box .details .content h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #ff0;
+}
+
+#container .box .details .content p {
+    margin: 10px 0 0;
+    padding: 0;
+
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+section#raisons {
+    background-attachment: fixed;
+    padding: 25px;
+}
+@media print {
+    section#raisons {
+        background: none;
+    }
+}
+
+/* Simple Card styles for prettying */
+
+html {
+    font-size: 16px;
+    font-family: 'Open Sans', 'Helvetica Neue', 'Arial', sans-serif;
+}
+
+body {
+    background-color: #efefef;
+}
+* {
+    box-sizing: border-box;
+}
+.card {
+    box-shadow: 0 1px 0 #555;
+    background-color: white;
+}
+
+.button {
+    display: block;
+    background-color: tomato;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s ease-out;
+}
+img {
+    max-width: 500%;
+}
+
+.caroussel .column {
+
+    float: left;
+    width: 33.33%;
+}
+
+.caroussel .row:after {
+
+    content: "";
+    display: table;
+    clear: both;
+}
+/* bar loading*/
+.load {
+    margin-bottom: 15px;
+}
+.loading {
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 50px;
+    font-family: sans-serif;
+}
+.ball {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-color: #e74c3c;
+    border-radius: 50%;
+    box-shadow: inset 6px -10px 50px -20px #000;
+    animation: loading 1s infinite;
+}
+
+@keyframes loading {
+    0%,
+    100% {
+        transform: translateY(0px);
+        animation-timing-function: ease-out;
+    }
+    50% {
+        transform: translateY(-30px);
+        animation-timing-function: ease-in;
+    }
+}
+
+/* navbar*/
+
+
+.caroussel h2 {
+    margin-left: 70px;
+}
+
+
+html {
+    height: 100%;
+    overflow: hidden;
+    padding-top: 44px;
+    padding-bottom: 25px;
+}
+
+.navbar img {
+    margin-left: 0;
+}
+
+
+
+/* CSS used for positioning the footers at the bottom of the page. */
+/* You can remove this. */
+
+html {
+    height: 100%;
+}
+
+body {
+ 
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    height: 100%;
+}
+
+.content {
+    flex: 1 0 auto;
+    -webkit-flex: 1 0 auto;
+    min-height: 200px;
+}
+
+/*
+footer
+*/
+@media only screen and (max-width : 600px) {
+    
+    }
+.foot>p{
+    color: #999999;
+    line-height: 25px;
+}
+.foot>h2,h3{
+    color: #ffffff;
+}
+.foot>h2{
+    font-size: 5px;
+}
+.footer-top{
+    margin-top: 0%;
+    background: #15aa13;
+    padding: 10px;
+    width: 100%;
+}
+.segment-one {
+    margin-top: 15px;
+}
+.segment-one img{
+    height: 150px;
+    width: 130px;
+    margin-left: 55px;
+}
+.segment-two h2{
+    color: #ffffff;
+    font-family: Poppins;
+    text-transform: uppercase;
+}
+.segment-two h2:before{
+    content:  '|';
+    color: #c65039;
+    padding-right: 5px;
+}
+.segment-two ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.segment-two ul li{
+   border-bottom: 1px solid rgba(255,255,255,0.3);
+    line-height: 40px;
+}
+.segment-two ul li a{
+    text-decoration: none;
+    color: #999999;
+}
+.segment-three h2{
+    color: #ffffff;
+    font-family: Poppins;
+    text-transform: uppercase;
+}
+.segment-three h2:before{
+    content:  '|';
+    color: #c65039;
+    padding-right: 10px;
+}
+
+.segment-four h2{
+    color: #ffffff;
+    font-family: Poppins;
+    text-transform: uppercase;
+}
+.segment-four h2:before{
+    content:  '|';
+    color: #c65039;
+
+}
+.segment-four form input[type=submit]{
+    background: #c65039;
+    border:none;
+    padding: 3px 10px;
+    margin-left: 1px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.footer-bottom-text{
+    text-align: center;
+    background: #000000;
+    line-height: 75px;
+    color: #fff;
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .md-mb-30{
+        margin-bottom: 30px;
+    }
+}
+@media only screen and (max-width: 767px){
+    .sm-mb-30{
+        margin-bottom: 30px;
+        padding-left: 15px;
+    }
+    .footer-top{
+        padding: 5px 0;
+    }
+}
+
+
+
+
+  
