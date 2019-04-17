@@ -16,10 +16,10 @@ import { AdminComponent } from './admin/admin.component';
 const routes: Routes = [
   { path: '', redirectTo: '/wall', pathMatch: 'full' },
   { path: 'wall', component: WallComponent },
-  { path: 'wall/catalogue', component: CatalogueComponent },
-  { path: 'wall/galerie', component: GalerieComponent },
-  { path: 'wall/conseil', component: ConseilComponent },
-  { path: 'wall/contact', component: ContactComponent },
+  { path: 'catalogue', component: CatalogueComponent },
+  { path: 'galerie', component: GalerieComponent },
+  { path: 'conseil', component: ConseilComponent },
+  { path: 'contact', component: ContactComponent },
 ];
 
 @NgModule({

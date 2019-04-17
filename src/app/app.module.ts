@@ -18,6 +18,7 @@ import { FooterComponent } from './footer/footer.component';
 import { GalerieComponent } from './galerie/galerie.component';
 import { ContactComponent } from './contact/contact.component';
 import { AdminComponent } from './admin/admin.component';
+import { NavComponent } from './nav/nav.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { AdminComponent } from './admin/admin.component';
     FooterComponent,
     GalerieComponent,
     ContactComponent,
-    AdminComponent
+    AdminComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
