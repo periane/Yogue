@@ -19,6 +19,7 @@ import { GalerieComponent } from './galerie/galerie.component';
 import { ContactComponent } from './contact/contact.component';
 import { AdminComponent } from './admin/admin.component';
 import { NavComponent } from './nav/nav.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { NavComponent } from './nav/nav.component';
     GalerieComponent,
     ContactComponent,
     AdminComponent,
-    NavComponent
+    NavComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

@@ -8,6 +8,7 @@ import { ConseilComponent } from './conseil/conseil.component';
 import { GalerieComponent } from './galerie/galerie.component';
 import { ContactComponent } from './contact/contact.component';
 import { AdminComponent } from './admin/admin.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'galerie', component: GalerieComponent },
   { path: 'conseil', component: ConseilComponent },
   { path: 'contact', component: ContactComponent },
+ { path: '**', redirectTo: "not_found"},
 ];
 
 @NgModule({
