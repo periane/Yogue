@@ -35,7 +35,6 @@ import { AdminComponent } from './admin/admin.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NgbModule,
     FormsModule,
     AppRoutingModule,
     ReactiveFormsModule,

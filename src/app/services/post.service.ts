@@ -7,7 +7,5 @@ import { ActivatedRoute } from '@angular/router';
 export class PostService {
   private apiUrl = 'http://localhost/sociale/web/web.php';
 
-  constructor(private route: ActivatedRoute,
-    private postService: PostService,
-    private location: Location) { }
+  constructor(private route: ActivatedRoute) { }
 }
